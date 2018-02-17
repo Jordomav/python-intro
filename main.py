@@ -33,3 +33,15 @@ noun1 = raw_input('Please enter a noun:')
 verb1 = raw_input('Please enter a verb:')
 noun2 = raw_input('Please enter another noun:')
 verb2 = raw_input('Please enter another verb:')
+
+def check_input(user_input):
+    if user_input != '' or user_input != ' ':
+        return user_input
+    else:
+        print 'You entered an incorrect input!'
+        return
+
+def start_game():
+    print 'You were walking along one day, when you heard a faint noise from overhead. You looked up and a giant %s was floating in the sky. You panicked, because well, why is a giant %s floating in the sky? Seconds later, it started to %s. You started to run in fear, but it was gaining on you. Your only hope was a %s' %(noun1, noun1, verb1, noun2)
+    
+start_game()
